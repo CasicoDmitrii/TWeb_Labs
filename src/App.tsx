@@ -1,13 +1,16 @@
 import React from 'react';
+import { Layout } from 'antd';
+import { HeaderLayout, MainLayout } from './Layouts';
 import './App.css';
-import 'antd/dist/antd.css';
-
-import {LayoutCustom} from "./Layouts/Layout";
 
 function App() {
   return (
-
-      < LayoutCustom />
+      <>
+        <Layout className="layout">
+          <HeaderLayout />
+          <MainLayout />
+        </Layout>
+      </>
   );
 }
 
